@@ -3,8 +3,8 @@ import pageHome from './home.js'
 import pageMenu from './menu.js'
 import pageContact from './contact.js'
 
-const content = document.getElementById('content')
+const body = document.querySelector('body')
 
-content.appendChild(
+body.appendChild(
   tabBar(['HOME', 'MENU', 'CONTACT'], [pageHome, pageMenu, pageContact])
 )

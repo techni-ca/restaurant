@@ -22,6 +22,9 @@ export default function tabBar (tabNames, tabFunctions) {
   tabbedPage.style.border = BORDER
   tabbedPage.style.borderTop = 'none'
   tabbedPage.style.backgroundColor = BG_COLOR
+  tabbedPage.style.alignItems = 'stretch'
+  tabbedPage.style.minHeight = '85vh'
+  tabbedPage.style.padding = '2rem'
 
   const bar = document.createElement('div')
   bar.style.display = 'flex'
@@ -50,6 +53,7 @@ export default function tabBar (tabNames, tabFunctions) {
   page.style.display = 'flex'
   page.style.flexDirection = 'column'
   page.style.border = 'none'
+  page.style.margin = '0px 2rem'
   page.appendChild(bar)
   page.appendChild(tabbedPage)
   return page
